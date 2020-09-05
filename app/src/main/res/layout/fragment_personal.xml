@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/img_person"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimention_200dp"
+        android:background="@drawable/avt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img_avt"
+        android:layout_width="@dimen/dimention_100dp"
+        android:layout_height="@dimen/dimention_100dp"
+        android:background="@drawable/border_person"
+        android:padding="@dimen/dimention_10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_person"
+        app:layout_constraintEnd_toEndOf="@+id/img_person"
+        app:layout_constraintStart_toStartOf="@+id/img_person"
+        app:layout_constraintTop_toBottomOf="@+id/img_person"
+        app:srcCompat="@drawable/avttrang" />
+
+    <Button
+        android:id="@+id/btn_changer_password"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/dimention_50dp"
+        android:layout_marginTop="@dimen/dimention_32dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/font_bold"
+        android:text="@string/title_doi_mat_khau"
+        android:textColor="@color/colorWhite"
+        android:elevation="@dimen/dimention_10dp"
+        android:textSize="@dimen/dimention_15sp"
+        android:onClick="Changer_PassWord"
+        android:padding="@dimen/dimention_16dp"
+        android:background="@drawable/border_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_avt" />
+
+    <Button
+        android:id="@+id/btn_infor"
+        android:layout_width="@dimen/dimention_200dp"
+        android:layout_height="@dimen/dimention_50dp"
+        android:layout_marginTop="@dimen/dimention_32dp"
+        android:background="@drawable/border_button"
+        android:elevation="@dimen/dimention_10dp"
+        android:fontFamily="@font/font_bold"
+        android:padding="@dimen/dimention_16dp"
+        android:text="@string/title_thongtin"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimention_15sp"
+        android:onClick="Information"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_changer_password" />
+
+    <Button
+        android:id="@+id/btn_log_out"
+        android:layout_width="@dimen/dimention_200dp"
+        android:layout_height="@dimen/dimention_50dp"
+        android:layout_marginTop="@dimen/dimention_32dp"
+        android:background="@drawable/border_button"
+        android:elevation="@dimen/dimention_10dp"
+        android:fontFamily="@font/font_bold"
+        android:padding="@dimen/dimention_16dp"
+        android:text="@string/title_logout"
+        android:onClick="Log_out"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimention_15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_infor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

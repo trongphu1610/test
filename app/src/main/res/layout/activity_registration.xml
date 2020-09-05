@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activity.ActivityRegistration">
+
+    <ImageView
+        android:id="@+id/img_background_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimention_250dp"
+        android:background="@drawable/dan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_logo_login"
+        android:layout_width="@dimen/dimention_250dp"
+        android:layout_height="@dimen/dimention_250dp"
+        android:src="@drawable/logologin"
+        app:layout_constraintBottom_toBottomOf="@+id/img_background_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_background_login" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="@dimen/dimention_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimention_48dp"
+        android:layout_marginEnd="@dimen/dimention_48dp"
+        android:layout_marginBottom="@dimen/dimention_16dp"
+        android:fontFamily="@font/belli"
+        android:hint="@string/title_username"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edt_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_login" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="@dimen/dimention_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimention_48dp"
+        android:layout_marginTop="@dimen/dimention_16dp"
+        android:layout_marginEnd="@dimen/dimention_48dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/belli"
+        android:hint="@string/title_password"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edt_password_again"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username" />
+
+    <EditText
+        android:id="@+id/edt_password_again"
+        android:layout_width="@dimen/dimention_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimention_48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/dimention_48dp"
+        android:fontFamily="@font/belli"
+        android:hint="@string/title_password"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <Button
+        android:id="@+id/btn_registration"
+        android:layout_width="@dimen/dimention_250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border_button_login"
+        android:elevation="@dimen/dimention_250dp"
+        android:fontFamily="@font/lantinwd"
+        android:text="@string/title_registrion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password_again" />
+</androidx.constraintlayout.widget.ConstraintLayout>
